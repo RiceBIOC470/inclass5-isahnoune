@@ -1,5 +1,3 @@
-%AW: 0.8/1 see comment below. 
-
 %Inclass assignment 5. 
 
 % 1. (a) Write a function that reads in an image and displays it so that 1%
@@ -10,11 +8,6 @@
 % function. (c) Redo part (b) but make the option to specify the fraction
 % of black/white pixels optional with a default value of 1% if not
 % specified. 
-
-%AW: Your functions below are doing the opposite of what they should. As you make more of the pixels black/white
-% they decrease contrast rather than increase it. You should pass your "Number" argument to stretchlim as in:
-%  image = imadjust(img, stretchlim(img, [number, 1-number]));
-% -0.2. 
 
 %a
 img = imread('Cat.jpg');
